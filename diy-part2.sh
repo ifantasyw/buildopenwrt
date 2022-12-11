@@ -14,6 +14,3 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 
 #修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
-
-#更改 固件版本信息
-sed -i "s/OpenWrt /$(date +%Y.%m.%d) FantasyW /g" package/lean/default-settings/files/zzz-default-settings
